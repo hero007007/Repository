@@ -1,0 +1,89 @@
+<ion-view view-title="基金详细">
+  <ion-nav-buttons side="right" class="bar-assertive">
+    <!--<h1 class="title name1">基金详细</h1>-->
+    <!--&lt;!&ndash; 新增按钮&ndash;&gt;-->
+    <!--<button class="button button-icon">&lt;!&ndash;行内按钮图标&ndash;&gt;-->
+      <!--&lt;!&ndash;<img(0) src="../img(0)/me.png" style="height: 22px;margin-top: 7px;">&ndash;&gt;-->
+      <!--<i class="ion-ios-arrow-left back1" ></i>-->
+      <!--<span id="back1">返回</span>-->
+    <!--</button>-->
+    <button class="button button-icon"><!--行内按钮图标-->
+      <img src="../img/dash/image.png" class="spk">
+    </button>
+  </ion-nav-buttons>
+  <ion-content id="main_content">
+    <!--君得金优先级-->
+    <div>
+      <h2 id="yxj">现金管家</h2>
+      <img src="../img/detailsno1/xian01.png" id="ypic">
+      <div>
+        <div class="detail1">
+          <h5>万份收益（元）</h5>
+          <h2>3.02%</h2>
+        </div>
+        <div class="detail1 detail2">
+          <h5>起购金额（元）</h5>
+          <h2>50.000</h2>
+        </div>
+        <div class="detail1">
+          <h5>风险等级</h5>
+          <h2>低</h2>
+        </div>
+      </div>
+    </div>
+
+    <!--<div id="shouyi">-->
+      <!--<h5>预期收益率</h5>-->
+      <!--<img(0) src="../img(0)/jun04.png">-->
+    <!--</div>-->
+
+    <ion-list ng-controller="hideCtrl">
+      <ion-item class="item_list item_list1">
+        <span class="list_h">产品特点</span>
+        <i class="{{arrow1}}" ng-click="toggle1()"></i>
+      </ion-item>
+      <div ng-show="a">
+        <img src="../img/detailsno1/xian02.png" style="width:97%;">
+      </div>
+      <ion-item class="item_list">
+        <span class="list_h">风险提醒</span>
+        <i class="{{arrow2}}" ng-click="toggle2()"></i>
+      </ion-item>
+      <div ng-show="b">
+        salaheiyuo
+      </div>
+      <ion-item class="item_list">
+        <span class="list_h">产品简介</span>
+        <i class="{{arrow3}}" ng-click="toggle3()"></i>
+      </ion-item>
+      <div ng-show="c" id="tedian">
+        <!--产品特征：<br>-->
+        <!--1、收益高：各期产品预期年化收益率均高于同期银行存款及市场理财产品收益率；<br>-->
+        <!--2、风险小：产品主要投资于国债、央行票据、公司债等固定收益品种，风险可控；<br>-->
+        <!--3、预期稳：采用分级设计，每期产品收益预先可知，不打无准备之仗；<br>-->
+        <!--4、选择多：产品期限丰富，有28、91、182、360天期供客户可自由选择。到期后资金T+3日可取；-->
+        {{charsObj.proIntro.proFeatures[0]}}<br>
+        {{charsObj.proIntro.proFeatures[1]}}<br>
+        {{charsObj.proIntro.proFeatures[2]}}<br>
+        {{charsObj.proIntro.proFeatures[3]}}
+      </div>
+      <ion-item class="item_list">
+        <span class="list_h">基金公司简介</span>
+        <i class="{{arrow4}}" ng-click="toggle4()"></i>
+      </ion-item>
+      <div ng-show="d" id="jianjie">
+        <!--国泰君安证券股份有限公司（以下简称国泰君安证券）是由原国泰证券有限公司和原君安证券有限责任公司通过新设合并、增资-->
+        <!--扩股，于1999年8月组建成立的，目前注册资本61亿元人民币。-->
+       <!--<p> 国泰君安证券所属的5家子公司、30家分公司及所辖的193家营业部分布于全国各地。业务范围横跨资本市场多个领域。拥有国泰-->
+        <!--君安金融控股公司（香港）、资产管理公司、基金管理公司、期货公司和创新投资公司五家子公司，是目前国内规模最大、经营-->
+        <!--范围最宽、机构分布最广的的证券公司之一。</p>-->
+        {{charsObj.fundCompanyIntro.text}}
+      </div>
+    </ion-list>
+    <!--立即购买和收藏-->
+    <div class="buy">
+      <div class="buy1"><button>立即购买</button></div>
+      <div class="buy2"><button>收藏</button></div>
+    </div>
+  </ion-content>
+</ion-view>

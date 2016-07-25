@@ -1,0 +1,214 @@
+<ion-view>
+  <ion-content>
+
+    <!--问题-->
+    <div class="row tab_btn">
+      <div class="col {{item.color}} button"  ng-repeat="item in items"
+           ng-click="check($index)">{{item.name}}</div>
+    </div>
+
+    <!--最新问题-->
+
+    <div class="new" ng-show="items[0].show">
+      <!--问题列表-->
+
+        <div class="list new_question">
+          <div class="item item-avatar" ng-repeat="l in list" ng-click="dialog($index)">
+            <img ng-src="{{l.src}}">
+            <small>来自<b>{{l.name}}</b>&nbsp;&nbsp;&nbsp;&nbsp;<time>{{l.date}}</time></small>
+            <p>{{l.text}}</p>
+          </div>
+        </div>
+      </div>
+
+    <!--已解决问题-->
+    <div class="old" ng-show="items[1].show">
+      <!--搜索框-->
+      <div class="search_div">
+        <input class="search" placeholder="请输入要搜索的问题">
+        <i class="ion-ios-search-strong outlet"></i>
+      </div>
+      <!--问题列表-->
+      <div class="list new_question">
+        <div class="item item-avatar">
+          <!--<img src="../images/girl1.png">-->
+          <img ng-src="{{u}}">
+          <small>来自<b>东方不败</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>我们周末去爬山吧！</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/boy1.png">
+          <small>来自<b>水生</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>真的好好吃啊...</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/girl1.png">
+          <small>来自<b>小于</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>我们周末去爬山吧！</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/boy1.png">
+          <small>来自<b>东方不败</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>真的好好吃啊...</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/girl1.png">
+          <small>来自<b>东方不败</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>我们周末去爬山吧！</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/boy1.png">
+          <small>来自<b>水生</b>&nbsp;&nbsp;&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>真的好好吃啊？</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/boy1.png">
+          <small>来自<b>水生</b>&nbsp;&nbsp;&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>真的好好吃啊？</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/boy1.png">
+          <small>来自<b>东方不败</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>真的好好吃啊...</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/girl1.png">
+          <small>来自<b>东方不败</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>我们周末去爬山吧！</p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../images/boy1.png">
+          <small>来自<b>水生</b>&nbsp;&nbsp;<time>3分钟前</time></small>
+          <p>真的好好吃啊...</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--·······分页按钮·········-->
+    <div class="row1">
+      <div class="{{item1.color1}} button btn_list" ng-repeat="item1 in items1"
+           ng-click="check1($index)">{{item1.name}}</div>
+    </div>
+
+    <!--空白页-->
+    <div class="blank_1" ng-show="items1[0].show">
+      <div class="show0"></div>
+    </div>
+
+<!--实时对话页面-->
+    <div class="true_time" ng-show="items1[1].show">
+      <div class="show1">
+
+        <time>{{c.time}}</time>
+        <div  class="{{c.css}}">
+          <img ng-src="{{c.src}}">
+          <!--<img ng-src="{{u}}">-->
+          <!--<small>{{c.from}}<b>{{c.name}}</b>&nbsp;&nbsp;&nbsp;&nbsp;<time>{{c.time}}</time></small>-->
+          <!--<p></p>-->
+          <div>{{c.text}}</div>
+        </div>
+        <!--ng-show="b"-->
+        <!--回答问题-->
+        <div id="answer" ng-show="d" ng-repeat="answer in list1 track by $index">
+          <img ng-src="{{c.src}}" >
+          <!--回复问题-->
+          <p >{{answer}}</p>
+        </div>
+
+        <div id="sent" ng-show="a">
+          <form ng-submit="submit()">
+            <input class="input1" type="text"  ng-model="text" name="text">
+
+            <input class="input2" type="submit" id="submit" value="发送" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+
+        <!--智能选股页面-->
+    <div class="choose" ng-show="items1[2].show">
+      <div class="show2">
+        <div class="show2_1" style="background: #FFFFFF; margin-left: 20px;">
+        <table border="1" cellspacing="5">
+          <tr>
+            <th>概念<span id="gn">(0/1054)</span></th>
+            <th>行业<span id="hy">(0/225)</span></th>
+            <th>风格<span id="fg">(0/55)</span></th>
+            <th>短线精灵<span id="dxjl">(0/100)</span></th>
+          </tr>
+
+        </table>
+        <!--选股因子显示列表-->
+        <div class="index_mid_list">
+          <ul>
+            <li class="gn_list list_1">
+
+            </li>
+            <li class="hy_list list_2">
+
+            </li>
+            <li class="fg_list list_3">
+
+            </li>
+            <li class="dxjl_list list_4">
+
+            </li>
+          </ul>
+        </div>
+        </div>
+
+
+        <div class="list_5">
+          <div class="dashSearch" ng-if="f">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+            </ul>
+          </div>
+
+
+          <input ng-change="search1()" ng-init="value" ng-model="value" type="text"  />
+          <button class="nav_button1"  onclick="ckxgjgList()"  />查看选股结果
+          <button  class="nav_button2" onclick="saveXgjg1()" />保存搜索结果
+          <input id="files" type="file" style="display: none;" />
+          <button  class="nav_button3" onclick="removeList()" />清除搜索结果
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+  <!--股市信息-->
+  <div class="message">
+
+    <ul class="ul1">
+      <li class="title1">上证指数</li>
+      <li style="color: red">2888.88</li>
+      <li style="color: red">16.8%</li>
+      <li style="color: #FFFFFF">687亿</li>
+    </ul>
+    <ul class="ul2">
+      <li class="title1">深证指数</li>
+      <li style="color: green">10138.39</li>
+      <li style="color: green">0.48%</li>
+      <li style="color: #FFFFFF">687亿</li>
+    </ul>
+    <ul class="ul3">
+      <li class="title1">创业板</li>
+      <li style="color: green">2198.88</li>
+      <li style="color: green">-0.13%</li>
+      <li style="color: #FFFFFF">1298亿</li>
+    </ul>
+  </div>
+</ion-view>

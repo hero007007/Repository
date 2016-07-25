@@ -1,0 +1,457 @@
+/* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
+*{
+  margin: 0;
+  padding: 0;
+  font-size:62.5%;
+  font-family: "微软雅黑";
+}
+a{
+  text-decoration: none;
+}
+#header{
+  height:48px;
+  background-color:#b71826;
+
+}
+.lunbo {
+  width: 100%;
+  height: 165px;
+}
+.ion-record:before {
+  content: "";
+  color: #fff;
+  font-size: 14px;
+}
+.blue{
+  background:#c50016;
+  font-size:18px;
+  color: #fff;
+  margin-right:10px;
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  line-height: 40px;
+
+}
+.red{
+  background: #ffffff;
+  border: 1px solid #c50016;
+  font-size: 18px;
+  color: #c50016;
+  width: 110px;
+  height: 40px;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  line-height: 40px;
+}
+.yellow {
+  border: 1px solid #c50016;
+  background:#ffffff;
+  font-size: 18px;
+  color:  #c50016;
+  margin-right: 10px;
+  display: inline-block;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  line-height: 40px;
+  font-weight: 700;
+  /*margin-left: 10px;*/
+}
+.bg1,.bg2,.bg3{
+  float: left;
+  background:#ededef;
+
+  /*border-top: 1px solid #fff;*/
+}
+.bg1_top_r_c{
+  padding: 20px 10px;
+  line-height: 16px;
+  font-size: 14px;
+}
+.span11{
+  margin-left: 40%;
+  padding-left: 35%;
+  padding-top: 20px;
+  display: inline-block;
+}
+.bg1_top{
+  width:90%;
+  height: 140px;
+  background-color:#fff;
+  margin: 15px 5% 25px;
+}
+.bg1_bottom{
+  width:90%;
+  height:140px;
+  background-color:#fff;
+  margin: 0 5% 90px;
+}
+.bg1_top_l{
+  float: left;
+  width:62.12%;
+  height:140px;
+  /*border-bottom: 1px solid #000;*/
+}
+.bg1_bottom_l{
+  float: left;
+  width:62.12%;
+  height:140px;
+}
+.bg1_top_l img{
+  width: 100%;
+  /*margin-top: 15px;*/
+  height: 125px;
+}
+.bg1_bottom_l img{
+  width: 100%;
+  /*margin-top: 15px;*/
+  height: 125px;
+}
+.bg1_top_r{
+  height: 140px;
+  width: 37.8%;
+  border-left: 1px solid #1878bb;
+  /*background-color: #0a9dc7;*/
+  float: left;
+  /*border-bottom: 1px solid #000;*/
+}
+.bg1_top_r span{
+ color:#1878bb ;
+  margin-left: 10%;
+  /*line-height: 0.8;*/
+}
+.btn1{
+  height: 30px;
+  width: 80%;
+  border-radius: 4px;
+  background-color:#1878bb ;
+  color: #fff;
+  border: 1px solid #1878bb ;
+  margin: 10px 10%;
+  font-size: 18px;
+}
+
+.bg1_top_r_b{
+  height: 140px;
+  width: 37.8%;
+  border-left: 1px solid #b71826;
+  /*background-color: #0a9dc7;*/
+  float: left;
+}
+.btn2{
+  height: 30px;
+  width: 80%;
+  border-radius: 4px;
+  background-color:#b71826 ;
+  color: #fff;
+  border: 1px solid #b71826 ;
+  margin: 10px 10%;
+  font-size: 18px;
+}
+.bg1_top_r_b span{
+  color: #b71826;
+  margin-left: 10%;
+  font-size: 12px;
+  /*line-height: 0.8;*/
+}
+
+/*精品理财页面*/
+.bg2 .pic1{
+  margin-left: 4.33%;
+  margin-top: 15px;
+  width: 91.3%;
+  padding: 8px;
+  background-color: #fff;
+}
+.bg2 .pic1 img{
+  width: 100%;
+  height:137px ;}
+.bg2 div span {
+  padding: 1px;
+  border: 1px solid #63c7ed;
+  border-radius: 6px;
+  margin-left: 1%;
+}
+.tips{
+  height: 35px;
+  color:#63c7ed;
+  background-color: #fff;
+  width: 91.6%;
+  float: left;
+  margin-left: 4%;
+  padding-left: 2%;
+}
+.wd{
+  float: right;padding-right: 5%;
+}
+
+#btn a button{
+  width:30.13%;
+  height: 40px;
+  background-color: #d12c28;
+  border: none;
+  color:#fff;
+  font-size: 16px;
+}
+#header2,#header3{
+  position: relative;
+  background-color: #c50016;
+}
+#back1,#back2{
+  position: relative;
+  top: -5px;
+}
+.detail1{
+  float: left;
+  width: 33.3333%;
+  background-color:#c6010b;
+  text-align: center;
+}
+.detail2{
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.detail1 h5,.detail1 h2{
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.detail1 h5{
+  font-size: 9px;
+
+}
+.detail1 h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+#yxj{
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0;
+}
+#ypic{
+  width:357px;
+  height: 126px;
+}
+#shouyi h5{
+  clear: both;
+  color: #026eb6;
+  font-size: 12px;
+  margin-bottom: 0;
+  background-color: #fff;
+  padding: 5px;
+ }
+#shouyi img{
+  width: 100%;
+  height: 75px;
+}
+.item_list{
+  color: #888888;
+  height: 32px;
+  border-left: 3px solid #c5000a;
+  margin: 7px 0;
+  padding: 8.5px 8.5px 25px;
+}
+.item_list1{
+  margin-top: 44px;
+}
+.list_h{
+  font-size: 15px;
+
+}
+.item_list i{
+  font-size: 25px;
+  vertical-align: text-bottom;
+  float: right;
+}
+#tedian,#jianjie{
+  padding: 5px 10px 5px 15px; background-color: #fff;margin-bottom: 5px;
+}
+.buy{
+  padding-right: 2%;
+  position: relative;
+  top: 145px;
+
+}
+.buy .buy2{
+  width: 33%;
+  height: 45px;
+
+  float: left;
+}
+.buy .buy1{
+  float: left;
+  width: 65%;
+  height: 45px;
+  color: #fff;
+  background-color: #fff;
+}
+.buy .buy1 button{
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  background-color:#c5000a;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.buy .buy2 button{
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  background-color:#fff;
+  border:1px solid #c5000a;
+  color:#c5000a;
+  font-size: 20px;
+  font-weight: bold;
+}
+#main_content{
+  padding-left: 2%; background-color:#eeeef0;padding-right: 2%;
+
+}
+.spk{
+  height: 22px;margin-top: 7px;
+}
+.back1{
+  font-size: 32px;
+}
+.name1{
+  color:#ffffff;
+}
+#name2{
+  left: 109px; right: 109px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 10px;
+  min-width: 30px;
+  height: 43px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.logoo img{
+  width:100%;height: 114px;
+}
+#pic_word1{
+  color: #fff;
+  position: absolute;top:89px;font-size: 18px;z-index: 666;
+  /*color: #e6e9ed;*/
+}
+#pic_word1 .span1{
+  margin-left: 7px;
+}
+#pic_word1 .span2{
+  margin-left: -4px;
+}
+#pic_word2{
+  float: right;
+}
+#pic_word2 .span3{
+  position: relative; /* top: 88px; */ right: 68px; font-size: 12px;
+  color: #e6e9ed;bottom: 33px;
+}
+#pic_word2 button{
+  width: 50px;height: 25px; background-color: #007aff; border: none;
+  border-radius: 3px;color: #fff;
+font-size: 10px;right:15px;position: absolute;top:84px;z-index: 666;
+}
+.jianjie{
+  padding:12px;
+  white-space:normal;
+letter-spacing: 0.5px;
+}
+.jianjie .span4{
+  font-size: 16px;font-weight: bold;
+}
+.jianjie .span5{
+  font-size: 12px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+#btn .btn3{
+  margin-left: 12px;margin-right: 5px;
+}
+#btn .btn4{
+  margin-right: 5px;
+}
+#ft{
+  font-size:16px;padding: 14px 12px; height: 48px;
+}
+#ft .span6{
+  color:#4f7eb0;padding-right: 8px;
+}
+#ft .span7{
+  padding-right: 8px;
+}
+#ft img{
+  width: 50px;height: 25px;    margin-left: 26%; vertical-align: bottom;
+ }
+#ftq ion-item{
+  height:78px;width: 350px;margin-left: 12px;
+}
+#ftq ion-item img{
+  width: 60px;height: 60px;margin-top: -8px; margin-left: -16px;
+}
+#ftq ion-item div{
+  width: 287px;height: 60px;float:right;  white-space:normal;
+  font-size:13px; margin-right: -17px; margin-top: -2px;padding-left: 3px;
+}
+#ftq ion-item div .i2{
+  font-size: 14px;color:#ba221d;margin-left: 25px;
+}
+#ftq ion-item div .i1,#ftq ion-item div .i3,#ftq ion-item div .i4{
+  color:#4376d1;font-size: 14px;
+}
+.span8{
+  font-size: 10px;
+  color: #000;
+}
+.tab_btn{
+  background-color: #ededef; border-bottom: 1px solid #fff;
+}
+.bg1_top_r img,.bg1_top_r_b img{
+  height: 16px;vertical-align:bottom;
+}
+.span9,.span10{
+  margin-left:37%;
+}
+.bg2_1,.bg2_2{
+  margin-bottom: 14px;height: 210px;
+}
+.bg2_2{
+;margin-top: -15px;
+}
+.bg2_2_1{
+  height: 35px; color:#63c7ed; background-color: #fff; width: 91.6%;
+  float: left; margin-left: 4%;
+  padding-left: 2%;
+}
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+  background: #c50016;
+
+}
+.bar-stable .button.button-clear,.bar.bar-stable .title{
+  color: #fff;
+}
+#slide{
+  height:165px;
+}

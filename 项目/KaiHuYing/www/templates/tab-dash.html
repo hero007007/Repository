@@ -1,0 +1,137 @@
+<ion-view>
+  <ion-nav-buttons  class="bar-assertive">
+    <!-- 新增按钮-->
+    <button class="button button-icon"><!--行内按钮图标-->
+      <img menu-toggle="left" src="../img(0)/me.png" class="spk">
+    </button>
+    <h1 class="title">{{titles}}</h1>
+    <button class="button button-icon"><!--行内按钮图标-->
+      <img menu-toggle="right" src="../img(0)/image.png" class="spk">
+    </button>
+  </ion-nav-buttons>
+
+
+  <ion-content>
+    <!--轮播图-->
+    <ion-slide-box show-pager="true" does-continue="true" auto-play="true" id="slide">
+      <ion-slide>
+        <div class="img1">
+          <img src="../img(0)/banner01.png" class="lunbo">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="img2">
+          <img src="../img(0)/banner02.png" class="lunbo" >
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="img3">
+          <img src="../img(0)/banner03.png" class="lunbo">
+        </div>
+        </ion-slide>
+        <ion-slide>
+        <div class="img4">
+          <img src="../img(0)/banner04.png" class="lunbo">
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+    <div class="row tab_btn">
+      <div class="col {{item.color}} button " ng-repeat="item in items"
+           ng-click="check($index)">{{item.name}}</div>
+    </div>
+    <!--在线开户-->
+    <div class="bg1" ng-show="items[0].show">
+      <div class="bg1_top">
+        <div class="bg1_top_l">
+          <img src="../img(0)/guotai.png">
+        </div>
+        <a href="#/chats"> <div class="bg1_top_r">
+          <button class="btn1">万2.5佣金</button>
+          <br>
+          <span>A级券商</span>
+          <br>
+          <span>24小时在线开户</span>
+          <p></p>
+          <span class="span9">去开户</span>
+          <img src="../img(0)/b.png">
+        </div></a>
+      </div>
+      <div class="bg1_bottom">
+        <div class="bg1_bottom_l">
+          <img src="../img(0)/guolian.png">
+        </div>
+        <a href="#/chats"><div class="bg1_top_r_b">
+          <button class="btn2">万2.5佣金</button>
+          <br>
+          <span>A级券商&nbsp;开户</span>
+          <br>
+          <span>省时.省心.省钱!</span>
+          <p></p>
+          <span class="span10" >去开户</span>
+          <img src="../img(0)/r.png">
+        </div></a>
+      </div>
+    </div>
+
+    <!--精品理财-->
+    <div class="bg2" ng-show="items[2].show">
+      <a href="#/details_1"> <div class="bg2_1">
+        <div class="pic1"><img src="../img(0)/jun01.png"></div>
+        <div class="tips">
+          <span>低风险</span>
+          <span>国债</span>
+          <div class="wd" ><img src="../img(0)/guotailogo.png"> </div>
+        </div>
+      </div></a>
+
+      <a href="#/details_1"><div class="bg2_2">
+          <div class="pic1"><img src="../img(0)/jun01.png"></div>
+          <div class="tips" >
+            <span>低风险</span>
+            <span>国债</span>
+            <div class="wd"><img src="../img(0)/guotailogo.png"> </div>
+          </div>
+        </div></a>
+
+      <a href="#/details_2"> <div class="bg2_2">
+            <div class="pic1"><img src="../img(0)/jun02.png"></div>
+            <div class="bg2_2_1" >
+              <span>低风险</span>
+              <span>国债</span>
+              <span>央行票据</span>
+              <div class="wd"><img src="../img(0)/guotailogo.png"> </div>
+            </div>
+          </div></a>
+
+      <a href="#/details_2"> <div class="bg2_2">
+              <div class="pic1"><img src="../img(0)/jun02.png"></div>
+              <div class="bg2_2_1" >
+                <span>低风险</span>
+                <span>国债</span>
+                <span>央行票据</span>
+                <div class="wd"><img src="../img(0)/guotailogo.png"> </div>
+              </div>
+            </div></a>
+    </div>
+
+    <div class="bg3" ng-show="items[1].show">
+      <div class="bg1_top">
+        <div class="bg1_top_l">
+          <img src="../img(0)/guotai.png">
+        </div>
+        <a href="#/chats"> <div class="bg1_top_r">
+          <div class="bg1_top_r_c">
+          <span>金融期货</span>
+          <br>
+          <span>--的领航家！</span>
+          </div>
+          <p></p>
+          <span class="span11">去开户</span>
+          <img src="../img(0)/b.png">
+        </div></a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
