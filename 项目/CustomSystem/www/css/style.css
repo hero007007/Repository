@@ -319,13 +319,22 @@ small,.item p,.new_question,time,small b{
 }
 .content_1{
   background-color: #9dcc6a;
+  /*overflow: hidden;*/
+  /*word-break: break-all;*/
+  /*max-width: 400px;*/
+  /*font-size: 12px;*/
+  /*position: absolute;*/
+  /*right: 80px;*/
+   /*top: 40px;*/
+  /*padding: 10px;*/
+  /*z-index: 33;*/
   overflow: hidden;
   word-break: break-all;
   max-width: 400px;
   font-size: 12px;
   position: absolute;
   right: 80px;
-   top: 40px;
+  top:40px;
   padding: 10px;
   z-index: 33;
 }
