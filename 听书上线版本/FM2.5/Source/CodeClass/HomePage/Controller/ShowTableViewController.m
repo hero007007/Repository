@@ -41,7 +41,7 @@
 -(void)setBackgroundImageView
 {
     UIImageView  * imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    [imageView setImage:[UIImage imageNamed:@"beijing2.jpg"]];
+    [imageView setImage:[UIImage imageNamed:@"xingkong2.jpg"]];
     
     self.tableView.backgroundView = imageView;
 }

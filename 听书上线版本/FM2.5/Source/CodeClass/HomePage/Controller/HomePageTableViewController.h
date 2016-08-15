@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HomePageTableViewController : UITableViewController
-
+//全局变量
 @end

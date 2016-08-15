@@ -12,7 +12,7 @@
 #import "ListModel.h"
 #import "ShowTableViewController.h"
 @interface HomePageTableViewController ()
-
+//私有变量
 
 @end
 
@@ -40,12 +40,12 @@
 -(void)setBackgroundImageView
 {
     UIImageView * backImageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    [backImageView setImage:[UIImage imageNamed:@"beijing.jpg"]];
+    [backImageView setImage:[UIImage imageNamed:@"xingkong2.jpg"]];
     
     self.tableView.backgroundView = backImageView;
     
     
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"beijing.jpg"]];
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"xingkong2.jpg"]];
 }
 
 
@@ -74,6 +74,9 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    
     HomePageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     
