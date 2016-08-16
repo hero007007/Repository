@@ -1,0 +1,4 @@
+2016.8.9
+
+关于框架:
+    我们这样写应用程序：用带 Angular 扩展语法的 HTML 写 模板(templates) ，用 组件(component) 类管理这些模板，用 服务(service) 添加应用逻辑，用根组件完成 Angular 启动 。

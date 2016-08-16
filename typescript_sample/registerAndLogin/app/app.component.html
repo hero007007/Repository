@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+   <!--告诉应该导航到哪里-->
+<nav>
+    <a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
+    <a [routerLink]="['/heroes']" routerLinkActive="active">heroes</a>
+    <a [routerLink]="['/register-login']" routerLinkActive="active">jlch-register-login</a>
+    <a [routerLink]="['/member']" routerLinkActive="active">jlch-member</a>
+    <!--<a [routerLink]="['/heroes']">heroes</a>-->
+</nav>
+<my-heroes></my-heroes>
+<router-outlet></router-outlet>

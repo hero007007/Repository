@@ -1,0 +1,35 @@
+h1 {
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+/*导航背景颜色*/
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+/*导航字体颜色*/
+nav a:visited, a:link {
+    color: #607D8B;
+}
+nav a:hover {
+    color: #039be5;//鼠标移动到该导航按钮上字体会变成的颜色
+    background-color: #CFD8DC;//鼠标移动到该导航按钮上背景会变成的颜色
+}
+/*选定的颜色*/
+nav a.active {
+    color: #7ce58b;
+}
+/*
+导航栏停在默认的那个导航按钮上的时候,它的颜色为什么不会变化成a.active的颜色
+(加上这个属性就好了 routerLinkActive="active")
+*/
