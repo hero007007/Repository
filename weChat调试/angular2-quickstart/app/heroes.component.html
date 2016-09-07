@@ -1,0 +1,33 @@
+<!--<h1>My First Angular 2 App</h1>-->
+<h2>My Heroes</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+        <!-- each hero goes here -->
+        <span class="badge">{{hero.id}}</span>
+        {{hero.name}}
+    </li>
+</ul>
+<!--<my-hero-detail [hero]="selectedHero"></my-hero-detail>-->
+<div *ngIf="selectedHero">
+    <h2>
+        {{selectedHero.name | uppercase}} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
+
+
+<!--下面这段移动到了hero-detail.component.html中-->
+<!--<div *ngIf="selectedHero">-->
+<!--<h2>{{selectedHero.name}} details!</h2>-->
+<!--<div>-->
+    <!--<label>id: </label>{{selectedHero.id}}-->
+<!--</div>-->
+<!--<div>-->
+    <!--<label>name: </label>-->
+    <!--&lt;!&ndash;<input value="{{hero.name}}" placeholder="name">&ndash;&gt;-->
+    <!--&lt;!&ndash;让 表单输入 支持双向数据绑定&ndash;&gt;-->
+    <!--<input [(ngModel)]="selectedHero.name" placeholder="name">-->
+<!--</div>-->
+<!--</div>-->

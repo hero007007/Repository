@@ -1,0 +1,185 @@
+body{
+    background: #dcdadd;
+}
+
+@media only screen and (max-width:479px){
+    body{font-size:50px}
+}
+@media only screen and (min-width:360px) and (max-width:479px){
+    body{font-size:58px}
+}
+@media only screen and (min-width:480px) and (max-width:639px){
+    body{font-size:75px}
+}
+@media only screen and (min-width: 640px){
+    body{font-size:100px}
+}
+
+body:nth-child(2){
+    margin-top:.8em;
+}
+header{
+    height: .8em;
+    width: 100%;
+    top:0;
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+}
+.logo{
+    display: block;
+    float: left;
+    margin:.25em auto .25em .222em;
+    height: .3em;
+}
+.login{
+    display: block;
+    float: right;
+    width: .5em;
+    height:.5em;
+    margin: .15em;
+    background:  center no-repeat;
+    background-size: contain;
+}
+
+.single-title{
+    text-align: center;
+    line-height: 5.632em;
+    font-size: .25em;
+    font-weight: bold;
+    display: block;
+}
+
+.m96{
+    width: 98%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.tab li{
+    font-size: .21em;
+    display: block;
+    width: 50%;
+    text-align: center;
+    float: left;
+    background: #dadada;
+    line-height: 3em;
+}
+.tab li.on{
+    background: #f3f3f3;
+    color: #7a7979;
+}
+
+.login-form{
+    font-size: .21em;
+    clear: both;
+    padding-top: 1.2em;
+}
+.login-form li{
+    width: 94%;
+    margin: 0 auto;
+    margin:1em auto 2em;
+    position: relative;
+    height:3em;
+}
+.login-form li div{
+    position: absolute;
+    left: 2.6em;
+    right: 0em;
+    top: 0;
+    height: 2.8em;
+    padding-top: .2em;
+    border:solid 1px #ccc;
+    border-left: 0;
+}
+.login-form input{
+    display: block;
+    line-height: 2.8em;
+    border:0;
+    width: 100%;
+}
+.action{
+    display: inline-block;
+    line-height: 3em;
+    text-align: center;
+    color: #7a7979;
+    border-left: 0;
+    border-right: 0;
+}
+.enable{
+    background: #4c90ed;
+    border: solid 1px #4c90ed;
+    color: #fff;
+}
+.disable{
+    background: #ebebeb;
+    border: solid 1px #ebebeb;
+    color: #fff;
+}
+.verify-code{
+    display: inline-block;
+    height: 3em;
+    vertical-align: middle;
+}
+.submit{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin:1em auto;
+    line-height: 2.4em;
+    font-size: 1.28em;
+    background: #4c90ed;
+    color: #fff;
+}
+.half-action{
+    padding: 2em 0 4em;
+    font-size: .2em;
+    text-align: center;
+}
+.half-action a{
+    color: #000
+}
+
+footer{
+    font-size: .15em;
+    text-align: center;
+    clear: both;
+    border-top: solid 1px #ccc;
+    margin-top: 1em;
+    padding-top: 2em;
+}
+footer .tel{
+    width: 2em;
+    height:2em;
+    display: inline-block;
+    background:  no-repeat;
+    background-size: contain;
+}
+footer p{
+    padding: 1.2em 0;
+}
+footer p span{
+    font-size: 2.4em;
+    font-weight: bold;
+}
+footer p i{
+    font-size: 1.2em;
+    font-style: normal;
+    color: #868686;
+}
+.username,.password{
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 1.5em;*/
+    /*display: block;*/
+    /*height: 3em;*/
+    /*width: 2.6em;*/
+    /*border:solid 1px #ccc;*/
+    /*border-right: 0;*/
+}
+.username{
+    /*background-image: url();*/
+}
+.password{
+    /*background-image: url(./images/renewword.png);*/
+}
