@@ -12,13 +12,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by jlch on 16/9/7.
  */
 var core_1 = require('@angular/core');
-// import { Router } from '@angular/router';
 var AuthorizeComponent = (function () {
     function AuthorizeComponent() {
     }
     AuthorizeComponent.prototype.ngOnInit = function () {
-        var redirect_uri = this.getUrl('http://wechat.zhangtl.com/authorize/');
-        var linkUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1bb6c550b5eb8ee7&redirect_uri=" + redirect_uri + "&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
+        var redirect_uri = this.getUrl('http://wechat.zhangtl.com/');
+        var linkUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1bb6c550b5eb8ee7&redirect_uri=" + redirect_uri + "&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
         window.open(linkUrl);
     };
     AuthorizeComponent.prototype.getUrl = function (url) {
@@ -27,7 +26,8 @@ var AuthorizeComponent = (function () {
     AuthorizeComponent = __decorate([
         core_1.Component({
             selector: 'my-authorize',
-            template: ''
+            templateUrl: 'app/authorize.component.html',
+            styleUrls: ['app/authorize.component.css'],
         }), 
         __metadata('design:paramtypes', [])
     ], AuthorizeComponent);
