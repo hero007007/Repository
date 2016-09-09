@@ -13,17 +13,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var http_1 = require('@angular/http');
 var WeChatComponent = (function () {
-    function WeChatComponent(router) {
+    function WeChatComponent(router, http) {
         this.router = router;
+        this.http = http;
     }
     WeChatComponent.prototype.popToAuthorize = function () {
-        this.router.navigate(['/authorize']);
+        // this.router.navigate(['/authorize']);
         // let linkUrl:string = 'http://m.ane56.com';
         // window.open(linkUrl);
-        // let redirect_uri:string = this.getUrl('http://wechat.zhangtl.com');
-        // let linkUrl:string = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1bb6c550b5eb8ee7&redirect_uri=${redirect_uri}&response_type=code&scope=snsapi_base&state=123#wechat_redirect`;
-        // window.open(linkUrl);
+        var redirect_uri = this.getUrl('http://wechat.zhangtl.com');
+        var linkUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1bb6c550b5eb8ee7&redirect_uri=" + redirect_uri + "&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
+        window.open(linkUrl);
+    };
+    WeChatComponent.prototype.getAccesstoken = function () {
+        var code = '001SNQ7m1SHbOx02MM6m1TxL7m1SNQ7n';
+        var url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx1bb6c550b5eb8ee7&secret=31521717152b630a52f87dbaa8598a3a&code=" + code + "&grant_type=authorization_code";
+        this.http.get(url).map(function (res) { return res.json().data; });
+        alert($, { res: res });
+    };
+    WeChatComponent.prototype.getUrl = function (url) {
+        return encodeURIComponent(url);
     };
     WeChatComponent = __decorate([
         core_1.Component({
@@ -31,7 +42,7 @@ var WeChatComponent = (function () {
             templateUrl: 'app/weChat.component.html',
             styleUrls: ['app/weChat.component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [router_1.Router, http_1.Http])
     ], WeChatComponent);
     return WeChatComponent;
 }());

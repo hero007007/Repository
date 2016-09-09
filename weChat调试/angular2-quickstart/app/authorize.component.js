@@ -16,7 +16,7 @@ var AuthorizeComponent = (function () {
     function AuthorizeComponent() {
     }
     AuthorizeComponent.prototype.ngOnInit = function () {
-        var redirect_uri = this.getUrl('http://wechat.zhangtl.com/');
+        var redirect_uri = this.getUrl('http://wechat.zhangtl.com/authorize');
         var linkUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1bb6c550b5eb8ee7&redirect_uri=" + redirect_uri + "&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
         window.open(linkUrl);
     };
