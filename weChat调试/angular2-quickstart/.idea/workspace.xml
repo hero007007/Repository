@@ -26,8 +26,8 @@
       <file leaf-file-name="weChat.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/weChat.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="41" column="88" selection-start-line="41" selection-start-column="88" selection-end-line="41" selection-end-column="88" />
+            <state relative-caret-position="229">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
                 <element signature="e#38#87#0" expanded="true" />
               </folding>
@@ -349,12 +349,12 @@
       <workItem from="1473220478375" duration="636000" />
       <workItem from="1473221280210" duration="8728000" />
       <workItem from="1473296458329" duration="10799000" />
-      <workItem from="1473365482709" duration="6530000" />
+      <workItem from="1473365482709" duration="7747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105159000" />
+    <option name="totallyTimeSpent" value="106376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="23" width="1153" height="795" extended-state="0" />
@@ -753,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/weChat.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="88" selection-start-line="41" selection-start-column="88" selection-end-line="41" selection-end-column="88" />
+        <state relative-caret-position="229">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="e#38#87#0" expanded="true" />
           </folding>

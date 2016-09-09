@@ -1,0 +1,12 @@
+define(function(){
+    return {
+        firstScene: {
+            imageUrl: 'http://img1.cache.netease.com/3g/hdppt/ad_common/ad_first_screen.jpg',
+            targetUrl: ''
+        },
+        lastScene: {
+            imageUrl: 'http://img1.cache.netease.com/3g/hdppt/ad_common/ad_last_screen.jpg',
+            targetUrl: 'http://3g.163.com/links/6707'
+        }     
+    }
+});
