@@ -2,9 +2,10 @@
  * Created by jlch on 16/9/6.
  */
 import { Component }        from '@angular/core';
-import { Router }           from '@angular/router';
+// import { Router }           from '@angular/router';
 import { Http,Response }             from '@angular/http';
 import { Observable }       from 'rxjs/Observable';
+import { FromCodeReturn } from './fromCodeReturn';
 import any = jasmine.any;
 
 @Component({
@@ -15,8 +16,8 @@ import any = jasmine.any;
 
 export class WeChatComponent{
 
-    constructor(private router:Router,
-                public http:Http,
+    constructor(
+                public http:Http
     ) {}
 
 
@@ -36,16 +37,22 @@ export class WeChatComponent{
         return null;
     }
 
+    private handleError(error: any): Promise<any> {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
+    }
+
+
     getAccesstoken(){
         // let code:string = '001SNQ7m1SHbOx02MM6m1TxL7m1SNQ7n';
         let code:string = this.getQueryString('code');
         let url:string = `https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx1bb6c550b5eb8ee7&secret=31521717152b630a52f87dbaa8598a3a&code=${code}&grant_type=authorization_code`;
-        let res:Response;
-        this.http.get(url).map(res => res.json().data as string);
-        // alert(res);
+        let RES = this.http.get(url)
+            .toPromise()
+            .then(response => response.json().data as FromCodeReturn[])
+            .catch(this.handleError);
+        alert(RES);
     }
-
-
 
     getUrl(url:string){
         return encodeURIComponent(url);

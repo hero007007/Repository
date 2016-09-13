@@ -13,6 +13,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var mock_heroes_1 = require('./mock-heroes');
+// import { FromCodeReturn } from './fromCodeReturn';
 var HeroService = (function () {
     function HeroService() {
     }
